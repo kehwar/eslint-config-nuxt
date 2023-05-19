@@ -1,0 +1,10 @@
+{
+  "name": "@kehwar/eslint-config",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Kehwar (https://github.com/kehwar/)",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ]
+}
