@@ -2,6 +2,7 @@
   "name": "@kehwar/eslint-config-nuxt",
   "version": "0.1.0",
   "description": "",
+  "main": "src/base.cjs",
   "author": "Kehwar (https://github.com/kehwar/)",
   "license": "MIT",
   "keywords": [
