@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "description": "",
   "main": "src/base.cjs",
-  "author": "Kehwar (https://github.com/kehwar/)",
-  "license": "MIT",
-  "keywords": [
-    "eslint-config"
-  ],
   "dependencies": {
     "@antfu/eslint-config": "^0.38.6",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
@@ -28,5 +23,18 @@
   },
   "devDependencies": {
     "eslint": "^8.38.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kehwar/eslint-config-nuxt.git"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "author": "Kehwar (https://github.com/kehwar)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kehwar/eslint-config-nuxt/issues"
+  },
+  "homepage": "https://github.com/kehwar/eslint-config-nuxt#readme"
 }
