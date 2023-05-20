@@ -1,6 +1,6 @@
 {
   "name": "@kehwar/eslint-config-nuxt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "src/base.cjs",
   "dependencies": {
@@ -22,6 +22,9 @@
     "eslint-plugin-vue": "^9.12.0"
   },
   "devDependencies": {
+    "eslint": "^8.38.0"
+  },
+  "peerDependencies": {
     "eslint": "^8.38.0"
   },
   "repository": {
