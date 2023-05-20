@@ -5,7 +5,7 @@ module.exports = {
     overrides: [
         /** Override for storyblok components */
         {
-            files: ["storyblok/*.ts"],
+            files: ["storyblok/*.vue"],
             rules: {
                 "vue/multi-word-component-names": "off",
             },
