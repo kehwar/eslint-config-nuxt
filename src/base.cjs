@@ -29,6 +29,7 @@ module.exports = {
         "./promises.cjs",
         "./regex.cjs",
         "./sonar.cjs",
+        "./storyblok.cjs",
         "./style.cjs",
         "./tailwind.cjs",
         "./tests.cjs",
