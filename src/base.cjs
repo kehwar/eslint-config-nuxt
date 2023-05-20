@@ -69,21 +69,4 @@ module.exports = {
         "antfu",
     ],
 
-    /**
-     * Rule overrides
-     * TODO: Remove when refactoring is complete
-     */
-    overrides: [
-        /** Disable some rules for old modules to be refactored */
-        {
-            files: ["./modules/**", "./server/**", "./composables/**", "./components/**"],
-            rules: {
-                "eqeqeq": "off",
-                "vue/eqeqeq": "off",
-                "unicorn/filename-case": "off",
-            },
-        },
-
-    ],
-
 };

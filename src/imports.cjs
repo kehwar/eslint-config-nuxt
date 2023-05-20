@@ -139,7 +139,7 @@ module.exports = {
              *
              * @see https://github.com/nuxt/nuxt/issues/20539
              */
-            files: ["nuxt.config.ts", "**/module.ts", "**/module/**"],
+            files: ["nuxt.config.ts", "**/modules/**"],
             rules: {
                 /**
                  * Enable relative imports
