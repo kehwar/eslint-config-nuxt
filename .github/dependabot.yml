@@ -5,3 +5,4 @@ updates:
     schedule:
       interval: "daily" # Update frequency (e.g., daily, weekly, monthly)
     open-pull-requests-limit: 5 # Maximum number of open pull requests created by Dependabot
+    versioning-strategy: "increase" # Versioning strategy (e.g., auto, lockfile-only, widen)
