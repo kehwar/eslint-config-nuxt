@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "pnpm" # Package manager (e.g., npm, pip, bundler)
+  - package-ecosystem: "npm" # Package manager (e.g., npm, pip, bundler)
     directory: "/" # Specify the directory where your manifest or lock file is located
     schedule:
       interval: "daily" # Update frequency (e.g., daily, weekly, monthly)
