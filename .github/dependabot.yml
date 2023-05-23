@@ -1,0 +1,7 @@
+version: 2
+updates:
+  - package-ecosystem: "pnpm" # Package manager (e.g., npm, pip, bundler)
+    directory: "/" # Specify the directory where your manifest or lock file is located
+    schedule:
+      interval: "daily" # Update frequency (e.g., daily, weekly, monthly)
+    open-pull-requests-limit: 5 # Maximum number of open pull requests created by Dependabot
