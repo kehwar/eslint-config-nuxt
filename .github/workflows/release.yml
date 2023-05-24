@@ -1,0 +1,26 @@
+name: Release
+on: [workflow_dispatch]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛒 Checkout
+        uses: actions/checkout@v2
+      - name: 🖥️ Setup Node.js environment
+        uses: actions/setup-node@v2.5.2
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          run_install: true
+      - name: 😐 Set Git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+      - name: 🔑 Set NPM config
+        run: pnpm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: 🚀 Release
+        run: pnpm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
