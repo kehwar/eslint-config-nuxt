@@ -14,7 +14,7 @@
     "eslint-plugin-consistent-default-export-name": "^0.0.15",
     "eslint-plugin-editorconfig": "^4.0.3",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsdoc": "^44.2.5",
+    "eslint-plugin-jsdoc": "^44.2.7",
     "eslint-plugin-lodash": "^7.4.0",
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-no-relative-import-paths": "^1.5.2",
