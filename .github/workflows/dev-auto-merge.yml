@@ -1,4 +1,4 @@
-name: Weekly Merge from Dev to Main
+name: Merge Dev to Main
 
 on:
   schedule:
@@ -13,17 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: 🛒 Checkout code
       uses: actions/checkout@v2
       with:
         ref: 'dev' # The branch you want to merge from
 
-    - name: Configure Git
+    - name: 😐 Configure Git
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
 
-    - name: Merge to Main
+    - name: 🟢 Merge to Main
       run: |
         git fetch --unshallow
         git checkout main
