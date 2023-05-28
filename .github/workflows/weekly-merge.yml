@@ -1,0 +1,28 @@
+name: Weekly Merge from Dev to Main
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # This line schedules the job to run at 00:00 UTC every Sunday
+  workflow_dispatch: # This line allows you to manually trigger this action from the GitHub Actions UI
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: 'dev' # The branch you want to merge from
+
+    - name: Configure Git
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+
+    - name: Merge to Main
+      run: |
+        git fetch origin main
+        git checkout main
+        git merge dev --no-edit
+        git push origin main
