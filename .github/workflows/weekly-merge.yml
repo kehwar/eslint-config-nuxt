@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * 0' # This line schedules the job to run at 00:00 UTC every Sunday
   workflow_dispatch: # This line allows you to manually trigger this action from the GitHub Actions UI
 
+permissions:
+  contents: write
+
 jobs:
   merge:
     runs-on: ubuntu-latest
