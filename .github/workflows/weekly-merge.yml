@@ -25,7 +25,7 @@ jobs:
 
     - name: Merge to Main
       run: |
-        git fetch origin main
+        git fetch --unshallow
         git checkout main
-        git merge dev --no-edit --allow-unrelated-histories
-        git push origin main
+        git merge --no-ff dev
+        git push
