@@ -158,5 +158,15 @@ module.exports = {
                 ],
             },
         },
+        {
+            /**
+             * Overrides for *.routes.ts files
+             */
+            files: ["**/pages/*.routes.ts"],
+            rules: {
+                "unicorn/prefer-module": "off",
+                "consistent-default-export-name/default-export-match-filename": "off",
+            },
+        },
     ],
 };
