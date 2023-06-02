@@ -24,15 +24,6 @@ module.exports = {
         "lodash/prefer-lodash-typecheck": "off",
 
         /**
-         * Prefer Lodash method
-         *
-         * Disabled, because it's more verbose than native typecheck
-         *
-         * @see https://github.com/wix-incubator/eslint-plugin-lodash/blob/master/docs/rules/prefer-lodash-method.md
-         */
-        "lodash/prefer-lodash-method": "off",
-
-        /**
          * Prefer lodash chain
          *
          * When chaining methods, don't mix vanilla JS and Lodash methods
@@ -50,7 +41,7 @@ module.exports = {
          *
          * @see https://github.com/wix-incubator/eslint-plugin-lodash/blob/master/docs/rules/preferred-alias.md
          */
-        "lodash/preferred-alias": ["error", { ignoreMethods: ["each"] } ],
+        "lodash/preferred-alias": ["error"],
 
         /**
          * Chain Style

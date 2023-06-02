@@ -29,20 +29,6 @@ module.exports = {
         "unicorn/no-new-array": "error",
 
         /**
-         * Prefer for…of over the forEach method
-         *
-         * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-for-each.md
-         */
-        "unicorn/no-array-for-each": "error",
-
-        /**
-         * Do not use a for loop that can be replaced with a for-of loop
-         *
-         * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-for-loop.md
-         */
-        "unicorn/no-for-loop": "error",
-
-        /**
          * Enforce combining multiple Array#push() into one call
          *
          * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-push-push.md
