@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Enforce a specific parameter name in catch clauses
          *

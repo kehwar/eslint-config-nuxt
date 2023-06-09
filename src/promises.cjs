@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Disallow member access from await expression
          *
@@ -11,5 +9,4 @@ module.exports = {
          */
         "unicorn/no-await-expression-member": "error",
     },
-
 };

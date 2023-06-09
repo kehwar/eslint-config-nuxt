@@ -1,6 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
         /**
@@ -11,9 +10,10 @@ module.exports = {
          * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/multiline-blocks.md
          */
         "jsdoc/multiline-blocks": [
-            "error", {
-                "noZeroLineText": true,
-                "noFinalLineText": true,
+            "error",
+            {
+                noZeroLineText: true,
+                noFinalLineText: true,
             },
         ],
 

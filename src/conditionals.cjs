@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Prefer ternary expressions over simple if-else statements
          *

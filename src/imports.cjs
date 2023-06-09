@@ -1,15 +1,13 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Enforce absolute paths in imports
          *
          * @see https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#rule-options
          */
-        "no-relative-import-paths/no-relative-import-paths": ["warn", { allowSameFolder: false, prefix: "~" } ],
+        "no-relative-import-paths/no-relative-import-paths": ["warn", { allowSameFolder: false, prefix: "~" }],
 
         /**
          * Enforce absolute paths in named exports
@@ -30,7 +28,13 @@ module.exports = {
         "import/order": [
             "error",
             {
-                groups: ["builtin", "external", ["internal", "unknown"], ["parent", "sibling", "index"], ["object", "type"] ],
+                groups: [
+                    "builtin",
+                    "external",
+                    ["internal", "unknown"],
+                    ["parent", "sibling", "index"],
+                    ["object", "type"],
+                ],
                 alphabetize: {
                     order: "asc",
                     caseInsensitive: true,
@@ -43,7 +47,7 @@ module.exports = {
          *
          * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
          */
-        "import/newline-after-import": ["error", { considerComments: true } ],
+        "import/newline-after-import": ["error", { considerComments: true }],
 
         /**
          * Disallow specified modules when loaded by import
@@ -89,7 +93,7 @@ module.exports = {
          *
          * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
          */
-        "unicorn/prefer-export-from": ["error", { ignoreUsedVariables: true } ],
+        "unicorn/prefer-export-from": ["error", { ignoreUsedVariables: true }],
 
         /**
          * Enforce consistent usage of type imports
@@ -104,7 +108,6 @@ module.exports = {
          * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md
          */
         "unicorn/prefer-module": "error",
-
     },
 
     /** Rule overrides */

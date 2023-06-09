@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Custom rules */
     rules: {
-
         /**
          * Prefer using one import scope
          *
@@ -78,6 +76,5 @@ module.exports = {
          * @see https://github.com/wix-incubator/eslint-plugin-lodash/blob/master/docs/rules/matches-prop-shorthand.md
          */
         "lodash/matches-prop-shorthand": ["error", "never"],
-
     },
 };

@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Disallow empty files
          *
@@ -16,7 +14,7 @@ module.exports = {
          *
          * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
          */
-        "unicorn/filename-case": ["error", { "case": "kebabCase" } ],
+        "unicorn/filename-case": ["error", { case: "kebabCase" }],
     },
 
     /** Rule overrides */
@@ -31,7 +29,7 @@ module.exports = {
                  * @see https://github.com/wobsoriano/nuxt-remote-fn/issues/5
                  * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
                  */
-                "unicorn/filename-case": ["error", { "case": "snakeCase" } ],
+                "unicorn/filename-case": ["error", { case: "snakeCase" }],
             },
         },
     ],

@@ -1,6 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rule overrides */
     overrides: [
         {

@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Extensions */
     extends: [
-
         // Plugin Extensions
 
         "@nuxtjs/eslint-config-typescript", // https://github.com/nuxt/eslint-config
@@ -48,5 +46,4 @@ module.exports = {
         "tailwindcss", // https://github.com/francoismassart/eslint-plugin-tailwindcss
         "unicorn", // https://github.com/sindresorhus/eslint-plugin-unicorn
     ],
-
 };

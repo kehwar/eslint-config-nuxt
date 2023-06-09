@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         // Basic
         // @see https://github.com/phanect/eslint-plugin-editorconfig
 
@@ -18,9 +16,11 @@ module.exports = {
          * @see https://github.com/antfu/eslint-config/blob/main/packages/eslint-config-ts/index.js#L78
          */
 
-        "indent": "off",
+        indent: "off",
         "@typescript-eslint/indent": [
-            "error", 4, {
+            "error",
+            4,
+            {
                 SwitchCase: 1,
                 VariableDeclarator: 1,
                 outerIIFEBody: 1,

@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Disallow the use of variables before they are defined
          *
@@ -18,7 +16,7 @@ module.exports = {
          *
          * @see https://eslint.org/docs/latest/rules/camelcase
          */
-        "camelcase": [
+        camelcase: [
             "error",
             {
                 allow: ["^UNSAFE_", "^U_", "^_", "^__"],
@@ -106,5 +104,4 @@ module.exports = {
          */
         "no-multi-assign": "error",
     },
-
 };

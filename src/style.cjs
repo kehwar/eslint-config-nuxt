@@ -1,6 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
         /**
@@ -9,7 +8,7 @@ module.exports = {
          * @see https://typescript-eslint.io/rules/semi
          */
         "@typescript-eslint/semi": ["error", "always"],
-        "semi": "off",
+        semi: "off",
 
         /**
          * Enforce the consistent use of quotes
@@ -17,12 +16,14 @@ module.exports = {
          * @see https://typescript-eslint.io/rules/quotes
          */
         "@typescript-eslint/quotes": [
-            "error", "double", {
+            "error",
+            "double",
+            {
                 avoidEscape: true,
                 allowTemplateLiterals: true,
             },
         ],
-        "quotes": "off",
+        quotes: "off",
 
         /**
          * Require or disallow trailing commas
@@ -30,7 +31,8 @@ module.exports = {
          * @see https://typescript-eslint.io/rules/comma-dangle
          */
         "@typescript-eslint/comma-dangle": [
-            "error", {
+            "error",
+            {
                 arrays: "always-multiline",
                 objects: "always-multiline",
                 imports: "always-multiline",
@@ -74,6 +76,5 @@ module.exports = {
          * @see https://eslint.org/docs/latest/rules/quote-props
          */
         "quote-props": ["error", "consistent"],
-
     },
 };

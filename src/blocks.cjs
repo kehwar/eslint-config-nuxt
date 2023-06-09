@@ -1,15 +1,13 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Enforce consistent brace style for blocks
          *
          * @see https://typescript-eslint.io/rules/brace-style
          */
-        "@typescript-eslint/brace-style": ["error", "stroustrup", { allowSingleLine: false } ],
+        "@typescript-eslint/brace-style": ["error", "stroustrup", { allowSingleLine: false }],
         "brace-style": "off",
 
         /**
@@ -17,6 +15,6 @@ module.exports = {
          *
          * @see https://eslint.org/docs/latest/rules/curly
          */
-        "curly": ["error", "multi-line"],
+        curly: ["error", "multi-line"],
     },
 };

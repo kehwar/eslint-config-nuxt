@@ -1,6 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
         /**
@@ -26,7 +25,7 @@ module.exports = {
          *
          * @see https://eslint.vuejs.org/rules/component-api-style.html
          */
-        "vue/component-api-style": ["error", ["script-setup"] ],
+        "vue/component-api-style": ["error", ["script-setup"]],
 
         /**
          * Disallow use other than available lang
@@ -141,7 +140,7 @@ module.exports = {
          *
          * @see https://eslint.vuejs.org/rules/eqeqeq.html
          */
-        "vue/eqeqeq": ["error", "always", { null: "ignore" } ],
+        "vue/eqeqeq": ["error", "always", { null: "ignore" }],
 
         /**
          * Enforce order of attributes
@@ -169,6 +168,5 @@ module.exports = {
                 alphabetical: true,
             },
         ],
-
     },
 };

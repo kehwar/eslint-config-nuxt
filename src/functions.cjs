@@ -1,9 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-
     /** Rules */
     rules: {
-
         /**
          * Require parentheses around arrow function arguments
          *
@@ -53,7 +51,7 @@ module.exports = {
          *
          * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-scoping.md
          */
-        "unicorn/consistent-function-scoping": ["error", { checkArrowFunctions: false } ],
+        "unicorn/consistent-function-scoping": ["error", { checkArrowFunctions: false }],
 
         /**
          * Enforce top-level functions to be declared with function keyword
