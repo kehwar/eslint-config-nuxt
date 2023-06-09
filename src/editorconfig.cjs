@@ -10,13 +10,7 @@ module.exports = {
         "editorconfig/linebreak-style": "error",
         "editorconfig/no-trailing-spaces": "error",
 
-        /**
-         * Indentation
-         *
-         * @see https://github.com/antfu/eslint-config/blob/main/packages/eslint-config-ts/index.js#L78
-         */
-
-        indent: "off",
+        /** @see https://github.com/antfu/eslint-config/blob/main/packages/eslint-config-ts/index.js#L78 */
         "@typescript-eslint/indent": [
             "error",
             4,
@@ -59,5 +53,6 @@ module.exports = {
                 offsetTernaryExpressions: false,
             },
         ],
+        indent: "off",
     },
 };

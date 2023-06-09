@@ -2,18 +2,10 @@
 module.exports = {
     /** Rules */
     rules: {
-        /**
-         * Disallow empty files
-         *
-         * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-empty-file.md
-         */
+        /** @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-empty-file.md */
         "unicorn/no-empty-file": "error",
 
-        /**
-         * Enforce a case style for filenames
-         *
-         * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
-         */
+        /** @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md */
         "unicorn/filename-case": ["error", { case: "kebabCase" }],
     },
 

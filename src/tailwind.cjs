@@ -2,27 +2,15 @@
 module.exports = {
     /** Rules */
     rules: {
-        /**
-         * Detect classnames which do not belong to Tailwind CSS
-         */
+        /** Detect classnames which do not belong to Tailwind CSS */
         "tailwindcss/no-custom-classname": [
             "warn",
             {
-                /** Don't read any css files to improve performance */
+                // Don't read any css files to improve performance
                 cssFiles: [],
 
-                /** Add exception for primevue classes */
-                whitelist: [
-                    "pi",
-                    "pi-.*",
-                    "p-button",
-                    "p-button-.*",
-                    "p-input",
-                    "p-input-.*",
-                    "p-inputgroup",
-                    "p-inputgroup-addon",
-                    "p-ripple",
-                ],
+                // Add exception for primevue classes
+                whitelist: ["pi", "pi-.*", "p-*"],
             },
         ],
     },
