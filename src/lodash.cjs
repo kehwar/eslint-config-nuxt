@@ -1,9 +1,6 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
 
-    /** Extensions */
-    extends: ["plugin:lodash/recommended"],
-
     /** Custom rules */
     rules: {
 

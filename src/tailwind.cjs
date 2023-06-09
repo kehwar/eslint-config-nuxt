@@ -1,9 +1,6 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
 
-    /** Extensions */
-    extends: ["plugin:tailwindcss/recommended"],
-
     /** Rules */
     rules: {
         /**

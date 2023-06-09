@@ -4,16 +4,15 @@ module.exports = {
     /** Extensions */
     extends: [
 
-        // Base
+        // Plugin Extensions
 
-        /**
-         * Nuxt recommended rules
-         *
-         * @see https://github.com/nuxt/eslint-config#typescript
-         */
-        "@nuxtjs/eslint-config-typescript",
+        "@nuxtjs/eslint-config-typescript", // https://github.com/nuxt/eslint-config
+        "plugin:consistent-default-export-name/fixed", // https://github.com/minseoksuh/eslint-plugin-consistent-default-export-name
+        "plugin:lodash/recommended", // https://github.com/wix-incubator/eslint-plugin-lodash
+        "plugin:promise/recommended", // https://github.com/eslint-community/eslint-plugin-promise
+        "plugin:tailwindcss/recommended", // https://github.com/francoismassart/eslint-plugin-tailwindcss
 
-        // Custom rules
+        // Rules
 
         "./arrays.cjs",
         "./blocks.cjs",
@@ -38,36 +37,16 @@ module.exports = {
 
     /** Plugins */
     plugins: [
-
-        /** @see https://github.com/SonarSource/eslint-plugin-sonarjs */
-        "sonarjs",
-
-        /** @see https://github.com/eslint-community/eslint-plugin-promise */
-        "promise",
-
-        /** @see https://github.com/sindresorhus/eslint-plugin-unicorn */
-        "unicorn",
-
-        /** @see https://github.com/wix-incubator/eslint-plugin-lodash */
-        "lodash",
-
-        /** @see https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#installation */
-        "no-relative-import-paths",
-
-        /** @see https://github.com/minseoksuh/eslint-plugin-consistent-default-export-name */
-        "consistent-default-export-name",
-
-        /** @see https://github.com/phanect/eslint-plugin-editorconfig */
-        "editorconfig",
-
-        /** @see https://github.com/gajus/eslint-plugin-jsdoc */
-        "jsdoc",
-
-        /** @see https://github.com/francoismassart/eslint-plugin-tailwindcss */
-        "tailwindcss",
-
-        /** @see https://github.com/antfu/eslint-config/tree/main/packages/eslint-plugin-antfu */
-        "antfu",
+        "antfu", // https://github.com/antfu/eslint-config/tree/main/packages/eslint-plugin-antfu
+        "consistent-default-export-name", // https://github.com/minseoksuh/eslint-plugin-consistent-default-export-name
+        "editorconfig", // https://github.com/phanect/eslint-plugin-editorconfig
+        "jsdoc", // https://github.com/gajus/eslint-plugin-jsdoc
+        "no-relative-import-paths", // https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths
+        "lodash", // https://github.com/wix-incubator/eslint-plugin-lodash
+        "promise", // https://github.com/eslint-community/eslint-plugin-promise
+        "sonarjs", // https://github.com/SonarSource/eslint-plugin-sonarjs
+        "tailwindcss", // https://github.com/francoismassart/eslint-plugin-tailwindcss
+        "unicorn", // https://github.com/sindresorhus/eslint-plugin-unicorn
     ],
 
 };
