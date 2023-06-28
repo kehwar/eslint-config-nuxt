@@ -3,7 +3,7 @@ module.exports = {
     /** Rules */
     rules: {
         /** @see https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#rule-options */
-        "no-relative-import-paths/no-relative-import-paths": ["warn", { allowSameFolder: false, prefix: "~" }],
+        "no-relative-import-paths/no-relative-import-paths": ["warn", { allowSameFolder: true, prefix: "~" }],
 
         /** Enforce absolute paths in named exports */
         "no-restricted-syntax": [
